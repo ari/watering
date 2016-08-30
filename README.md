@@ -5,8 +5,8 @@ Watering system for Raspberry Pi
 This simple project has been watering my garden for several years. The hardware is simple enough:
 
 1. Raspberry Pi (any model should be fine)
-2. USB Relay Module Board
-3. Solenoid
+2. USB Relay Module Board ![relay](docs/relay.jpg)
+3. Solenoid ![Solenoid](docs/solenoid.jpg)
 4. Power supply for solenoid
  
 ## Hardware setup
@@ -23,6 +23,8 @@ Connect the relay output to your solenoid in your garden. The solenoid I got req
 ## Configuring the software
 
 I set up the system to provide a simple user interface through a web page. I can then click a link and the watering system turns on. Because I have VPN access, I could in theory do this from anywhere on earth. Use watering.conf as a guide for configuring a virtual host in Apache httpd.
+
+![Web interface](docs/webUI.png)
 
 The contents of *watering* then goes into /var/www/localhost/htdocs/watering/function
 
